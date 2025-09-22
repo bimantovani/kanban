@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quadro Kanban</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Quadro Kanban</h1>
+
+  <main class="kanban">
+    <!-- Quadro Novas Tarefas -->
+    <div class="coluna" id="novas" data-tipo="novas">
+      <h2>Novas Tarefas</h2>
+      <div class="add-tarefa">
+        <input type="text" id="tarefaInput" placeholder="Digite uma tarefa...">
+        <button id="btnAdd">Adicionar</button>
+      </div>
+      <div class="contador">Total: <span id="count-novas">0</span></div>
+    </div>
+
+    <!-- Coluna A Fazer -->
+    <div class="coluna" id="afazer" data-tipo="afazer">
+      <h2>A Fazer</h2>
+      <div class="contador">Total: <span id="count-afazer">0</span></div>
+    </div>
+
+    <!-- Coluna Em Andamento -->
+    <div class="coluna" id="andamento" data-tipo="andamento">
+      <h2>Em Andamento</h2>
+      <div class="contador">Total: <span id="count-andamento">0</span></div>
+    </div>
+
+    <!-- Coluna Concluído -->
+    <div class="coluna" id="concluido" data-tipo="concluido">
+      <h2>Concluído</h2>
+      <div class="contador">Total: <span id="count-concluido">0</span></div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
